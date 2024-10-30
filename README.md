@@ -4,7 +4,6 @@
 cd PowerTradePosition.Reporting
 dotnet run
 
-You can also run application with command line arguments.
+or
 
-```bash
-dotnet run --ReportConfig:OutputDirectory "output"
+dotnet run --ReportConfig:OutputDirectory "output" --ReportConfig:Interval 1
