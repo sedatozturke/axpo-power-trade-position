@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sedat/Documents/Development/power-trade-position/PowerTradePosition/PowerTradePosition.UnitTests/PowerTradePosition.UnitTests.csproj": {}
+    "/Users/sedat/Documents/GitHub/axpo-power-trade-position/PowerTradePosition.UnitTests/PowerTradePosition.UnitTests.csproj": {}
   },
   "projects": {
-    "/Users/sedat/Documents/Development/power-trade-position/PowerTradePosition/PowerTradePosition.Reporting/PowerTradePosition.Reporting.csproj": {
+    "/Users/sedat/Documents/GitHub/axpo-power-trade-position/PowerTradePosition.Reporting/PowerTradePosition.Reporting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sedat/Documents/Development/power-trade-position/PowerTradePosition/PowerTradePosition.Reporting/PowerTradePosition.Reporting.csproj",
+        "projectUniqueName": "/Users/sedat/Documents/GitHub/axpo-power-trade-position/PowerTradePosition.Reporting/PowerTradePosition.Reporting.csproj",
         "projectName": "PowerTradePosition.Reporting",
-        "projectPath": "/Users/sedat/Documents/Development/power-trade-position/PowerTradePosition/PowerTradePosition.Reporting/PowerTradePosition.Reporting.csproj",
+        "projectPath": "/Users/sedat/Documents/GitHub/axpo-power-trade-position/PowerTradePosition.Reporting/PowerTradePosition.Reporting.csproj",
         "packagesPath": "/Users/sedat/.nuget/packages/",
-        "outputPath": "/Users/sedat/Documents/Development/power-trade-position/PowerTradePosition/PowerTradePosition.Reporting/obj/",
+        "outputPath": "/Users/sedat/Documents/GitHub/axpo-power-trade-position/PowerTradePosition.Reporting/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sedat/.nuget/NuGet/NuGet.Config"
@@ -92,14 +92,14 @@
         }
       }
     },
-    "/Users/sedat/Documents/Development/power-trade-position/PowerTradePosition/PowerTradePosition.UnitTests/PowerTradePosition.UnitTests.csproj": {
+    "/Users/sedat/Documents/GitHub/axpo-power-trade-position/PowerTradePosition.UnitTests/PowerTradePosition.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sedat/Documents/Development/power-trade-position/PowerTradePosition/PowerTradePosition.UnitTests/PowerTradePosition.UnitTests.csproj",
+        "projectUniqueName": "/Users/sedat/Documents/GitHub/axpo-power-trade-position/PowerTradePosition.UnitTests/PowerTradePosition.UnitTests.csproj",
         "projectName": "PowerTradePosition.UnitTests",
-        "projectPath": "/Users/sedat/Documents/Development/power-trade-position/PowerTradePosition/PowerTradePosition.UnitTests/PowerTradePosition.UnitTests.csproj",
+        "projectPath": "/Users/sedat/Documents/GitHub/axpo-power-trade-position/PowerTradePosition.UnitTests/PowerTradePosition.UnitTests.csproj",
         "packagesPath": "/Users/sedat/.nuget/packages/",
-        "outputPath": "/Users/sedat/Documents/Development/power-trade-position/PowerTradePosition/PowerTradePosition.UnitTests/obj/",
+        "outputPath": "/Users/sedat/Documents/GitHub/axpo-power-trade-position/PowerTradePosition.UnitTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sedat/.nuget/NuGet/NuGet.Config"
@@ -114,8 +114,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/sedat/Documents/Development/power-trade-position/PowerTradePosition/PowerTradePosition.Reporting/PowerTradePosition.Reporting.csproj": {
-                "projectPath": "/Users/sedat/Documents/Development/power-trade-position/PowerTradePosition/PowerTradePosition.Reporting/PowerTradePosition.Reporting.csproj"
+              "/Users/sedat/Documents/GitHub/axpo-power-trade-position/PowerTradePosition.Reporting/PowerTradePosition.Reporting.csproj": {
+                "projectPath": "/Users/sedat/Documents/GitHub/axpo-power-trade-position/PowerTradePosition.Reporting/PowerTradePosition.Reporting.csproj"
               }
             }
           }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PlgkPUVwinw=",
+  "dgSpecHash": "to3Hxv1Ufso=",
   "success": true,
-  "projectFilePath": "/Users/sedat/Documents/Development/power-trade-position/PowerTradePosition/PowerTradePosition.UnitTests/PowerTradePosition.UnitTests.csproj",
+  "projectFilePath": "/Users/sedat/Documents/GitHub/axpo-power-trade-position/PowerTradePosition.UnitTests/PowerTradePosition.UnitTests.csproj",
   "expectedPackageFiles": [
     "/Users/sedat/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/Users/sedat/.nuget/packages/coverlet.collector/6.0.2/coverlet.collector.6.0.2.nupkg.sha512",

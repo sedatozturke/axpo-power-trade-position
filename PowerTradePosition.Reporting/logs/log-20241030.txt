@@ -252,3 +252,60 @@ Axpo.PowerServiceException: Error retrieving power volumes
 2024-10-30 14:28:32 [Information] Queue is empty.
 2024-10-30 14:28:47 [Information] Checking Report Job Queue...
 2024-10-30 14:28:47 [Information] Queue is empty.
+2024-10-30 14:44:55 [Information] Application is running... Press any key to quit the application.
+2024-10-30 14:44:55 [Information] Creating a Day Ahead Report Job. Job Id: 5c69e423-f8ee-4a8d-b7b4-38489802b67d Request Time(UTC): 2024-10-30T13:44:55Z
+2024-10-30 14:44:55 [Information] Subscribing reporting service to its job queue
+2024-10-30 14:44:55 [Information] Checking Report Job Queue...
+2024-10-30 14:44:55 [Information] Found a DayAheadReport job in queue.
+2024-10-30 14:44:55 [Information] Processing DayAheadReport. Job Id: 5c69e423-f8ee-4a8d-b7b4-38489802b67d Extraction Time(UTC): 2024-10-30T13:44:55Z
+2024-10-30 14:44:57 [Information] Got day ahead trades from service for Date: 2024-10-31
+2024-10-30 14:44:57 [Information] Directory not exists. Creating output
+2024-10-30 14:44:57 [Information] Written CSV File: output/PowerPosition_20241031_202410301344.csv
+2024-10-30 14:45:10 [Information] Checking Report Job Queue...
+2024-10-30 14:45:10 [Information] Queue is empty.
+2024-10-30 14:45:25 [Information] Checking Report Job Queue...
+2024-10-30 14:45:25 [Information] Queue is empty.
+2024-10-30 14:52:30 [Information] Application is running... Press any key to quit the application.
+2024-10-30 14:52:30 [Information] Creating a Day Ahead Report Job. Job Id: c75ef2c6-fc06-4856-9123-15b15bfcf527 Request Time(UTC): 2024-10-30T13:52:30Z
+2024-10-30 14:52:30 [Information] Subscribing reporting service to its job queue
+2024-10-30 14:52:30 [Information] Checking Report Job Queue...
+2024-10-30 14:52:30 [Information] Found a DayAheadReport job in queue.
+2024-10-30 14:52:30 [Information] Processing DayAheadReport. Job Id: c75ef2c6-fc06-4856-9123-15b15bfcf527 Extraction Time(UTC): 2024-10-30T13:52:30Z
+2024-10-30 14:52:30 [Error] Exception while creating a report: Type: DayAheadReport Id:c75ef2c6-fc06-4856-9123-15b15bfcf527
+Axpo.PowerServiceException: Error retrieving power volumes
+   at Axpo.PowerService.CheckThrowError() in C:\Source\Axpo\etrmdev\CodingChallenge\src\PowerService\PowerService.cs:line 58
+   at Axpo.PowerService.GetTradesAsync(DateTime date) in C:\Source\Axpo\etrmdev\CodingChallenge\src\PowerService\PowerService.cs:line 47
+   at PowerTradePosition.Reporting.Services.ReportingService.GetDayAheadPosition(DateTime date) in /Users/sedat/Documents/GitHub/axpo-power-trade-position/PowerTradePosition.Reporting/Services/ReportingService.cs:line 31
+   at PowerTradePosition.Reporting.Services.ReportingService.CreateDayAheadReport(IReportJob dayAheadReportJob) in /Users/sedat/Documents/GitHub/axpo-power-trade-position/PowerTradePosition.Reporting/Services/ReportingService.cs:line 51
+2024-10-30 14:52:30 [Information] Pushed Job(c75ef2c6-fc06-4856-9123-15b15bfcf527) to queue for retry
+2024-10-30 14:52:45 [Information] Checking Report Job Queue...
+2024-10-30 14:52:45 [Information] Found a DayAheadReport job in queue.
+2024-10-30 14:52:45 [Information] Processing DayAheadReport. Job Id: c75ef2c6-fc06-4856-9123-15b15bfcf527 Extraction Time(UTC): 2024-10-30T13:52:30Z
+2024-10-30 14:52:49 [Information] Got day ahead trades from service for Date: 2024-10-31
+2024-10-30 14:52:49 [Information] Written CSV File: output/PowerPosition_20241031_202410301352.csv
+2024-10-30 14:53:00 [Information] Checking Report Job Queue...
+2024-10-30 14:53:00 [Information] Queue is empty.
+2024-10-30 14:53:15 [Information] Checking Report Job Queue...
+2024-10-30 14:53:15 [Information] Queue is empty.
+2024-10-30 14:53:30 [Information] Checking Report Job Queue...
+2024-10-30 14:53:30 [Information] Queue is empty.
+2024-10-30 14:53:45 [Information] Checking Report Job Queue...
+2024-10-30 14:53:45 [Information] Queue is empty.
+2024-10-30 14:54:00 [Information] Checking Report Job Queue...
+2024-10-30 14:54:00 [Information] Queue is empty.
+2024-10-30 14:54:15 [Information] Checking Report Job Queue...
+2024-10-30 14:54:15 [Information] Queue is empty.
+2024-10-30 14:54:30 [Information] Creating a Day Ahead Report Job. Job Id: f30805ab-6110-4067-9b60-4128774e20b4 Request Time(UTC): 2024-10-30T13:54:30Z
+2024-10-30 14:54:30 [Information] Checking Report Job Queue...
+2024-10-30 14:54:30 [Information] Found a DayAheadReport job in queue.
+2024-10-30 14:54:30 [Information] Processing DayAheadReport. Job Id: f30805ab-6110-4067-9b60-4128774e20b4 Extraction Time(UTC): 2024-10-30T13:54:30Z
+2024-10-30 14:54:31 [Information] Got day ahead trades from service for Date: 2024-10-31
+2024-10-30 14:54:31 [Information] Written CSV File: output/PowerPosition_20241031_202410301354.csv
+2024-10-30 14:54:45 [Information] Checking Report Job Queue...
+2024-10-30 14:54:45 [Information] Queue is empty.
+2024-10-30 14:55:00 [Information] Checking Report Job Queue...
+2024-10-30 14:55:00 [Information] Queue is empty.
+2024-10-30 14:55:15 [Information] Checking Report Job Queue...
+2024-10-30 14:55:15 [Information] Queue is empty.
+2024-10-30 14:55:30 [Information] Checking Report Job Queue...
+2024-10-30 14:55:30 [Information] Queue is empty.
