@@ -6,4 +6,4 @@ dotnet run
 
 or
 
-dotnet run --ReportConfig:OutputDirectory "output" --ReportConfig:Interval 1
+dotnet run --ReportConfig:OutputDirectory "reports" --ReportConfig:Interval 1
