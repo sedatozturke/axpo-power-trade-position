@@ -24,7 +24,7 @@ public class ReportingService : IReportingService
         _powerService = powerService;
         _recorderService = recorderService;
         _reportJobQueue = reportJobQueue;
-        _loggerService =loggerService;
+        _loggerService = loggerService;
     }
     public async Task<DayAheadPosition> GetDayAheadPosition(DateTime date)
     {

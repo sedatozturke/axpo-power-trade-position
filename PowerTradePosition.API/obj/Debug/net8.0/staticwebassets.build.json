@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wHsi2te866srT9Nf1SX4S3fbTrvGtO2wdrfbMB4kQm8=",
+  "Source": "PowerTradePosition.API",
+  "BasePath": "_content/PowerTradePosition.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

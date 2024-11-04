@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PowerTradePosition.Reporting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ae15738a743b42bd7d4a09df36deb075ec1d040")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1f84650daec56ec6c86297872ae7e5c0a44e3bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("PowerTradePosition.Reporting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PowerTradePosition.Reporting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E+5vsDe2F3Q=",
+  "dgSpecHash": "IW9RCNC5X68=",
   "success": true,
-  "projectFilePath": "/Users/sedat/Documents/Development/power-trade-position/PowerTradePosition/PowerTradePosition.Reporting/PowerTradePosition.Reporting.csproj",
+  "projectFilePath": "/Users/sedat/Documents/GitHub/axpo-power-trade-position/PowerTradePosition.Reporting/PowerTradePosition.Reporting.csproj",
   "expectedPackageFiles": [
     "/Users/sedat/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "/Users/sedat/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
