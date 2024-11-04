@@ -1,6 +1,7 @@
 using System;
 using System.Globalization;
 using Microsoft.Extensions.Options;
+using PowerTradePosition.API.Config;
 using PowerTradePosition.API.Models;
 using PowerTradePosition.Reporting.Models;
 
@@ -9,16 +10,16 @@ namespace PowerTradePosition.API.Data;
 public class ReportRepository : IReportRepository
 {
 
-
-    public ReportRepository()
+    private readonly ApiOptions _apiOptions;
+    public ReportRepository(IOptions<ApiOptions> apiOptions)
     {
-
+        _apiOptions = apiOptions.Value;
     }
     public ReportDetail? Get(string id)
     {
         try
         {
-            string[] files = Directory.GetFiles("../PowerTradePosition.Reporting/output", $"*_{id}.csv", SearchOption.TopDirectoryOnly);
+            string[] files = Directory.GetFiles(_apiOptions.ReportsFolder, $"*_{id}.csv", SearchOption.TopDirectoryOnly);
 
             if (files.Length > 0)
             {
@@ -58,7 +59,7 @@ public class ReportRepository : IReportRepository
     {
         try
         {
-            string[] files = Directory.GetFiles("../PowerTradePosition.Reporting/output", "*.csv", SearchOption.TopDirectoryOnly);
+            string[] files = Directory.GetFiles(_apiOptions.ReportsFolder, "*.csv", SearchOption.TopDirectoryOnly);
 
             List<ReportItem> reportItems = files.Select(fileNames => Path.GetFileNameWithoutExtension(fileNames))
                                                 .Select(file =>
@@ -86,7 +87,7 @@ public class ReportRepository : IReportRepository
     {
         try
         {
-            string[] files = Directory.GetFiles("../PowerTradePosition.Reporting/output", "*.csv", SearchOption.TopDirectoryOnly);
+            string[] files = Directory.GetFiles(_apiOptions.ReportsFolder, "*.csv", SearchOption.TopDirectoryOnly);
             var filteredFiles = files.Where(file => Path.GetFileName(file).Contains(searchQuery, StringComparison.OrdinalIgnoreCase));
             List<ReportItem> reportItems = filteredFiles.Select(fileNames => Path.GetFileNameWithoutExtension(fileNames))
                                                 .Select(file =>

@@ -1,3 +1,4 @@
+using PowerTradePosition.API.Config;
 using PowerTradePosition.API.Data;
 using PowerTradePosition.API.Services;
 
@@ -41,6 +42,7 @@ void ConfigureServices(IServiceCollection services)
                     .AllowAnyHeader()
             );
         });
+    services.Configure<ApiOptions>(builder.Configuration.GetSection("ApiOptions"));
     services.AddSingleton<IReportService, ReportService>();
     services.AddSingleton<IReportRepository, ReportRepository>();
 }
