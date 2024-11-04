@@ -25,12 +25,22 @@ app.UseHealthChecks("/health");
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+app.UseCors("AllowAny");
 
 app.Run();
 
 
 void ConfigureServices(IServiceCollection services)
 {
+    services.AddCors(options =>
+        {
+            options.AddPolicy("AllowAny",
+                builder => builder
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+            );
+        });
     services.AddSingleton<IReportService, ReportService>();
     services.AddSingleton<IReportRepository, ReportRepository>();
 }

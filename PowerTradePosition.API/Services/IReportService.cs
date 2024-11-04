@@ -1,11 +1,12 @@
 using System;
+using PowerTradePosition.API.Models;
 using PowerTradePosition.API.Models.Dto;
 
 namespace PowerTradePosition.API.Services;
 
 public interface IReportService
 {
-  void GetReports();
+  List<ReportItem> GetReports(string? searchQuery);
 
-  void GetReport(string id);
+  ReportDetail GetReport(string id);
 }

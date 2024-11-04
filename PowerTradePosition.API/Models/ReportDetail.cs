@@ -5,5 +5,5 @@ namespace PowerTradePosition.API.Models;
 
 public class ReportDetail : ReportItem
 {
-  public List<PowerVolume> powerVolumes { get; set; }
+  public List<PowerVolumeByPeriod> PowerVolumes { get; set; }
 }

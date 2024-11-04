@@ -6,6 +6,8 @@ namespace PowerTradePosition.API.Data;
 public interface IReportRepository
 {
     List<ReportItem> List();
+    
+    List<ReportItem> List(string searchQuery);
 
-    ReportDetail Get(string id);
+    ReportDetail? Get(string id);
 }

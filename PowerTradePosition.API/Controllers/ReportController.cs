@@ -15,17 +15,21 @@ namespace PowerTradePosition.API.Controllers
         }
 
         [HttpGet("")]
-        public async Task<IActionResult> GetReports()
+        public async Task<IActionResult> GetReports([FromQuery] string? search)
         {
-            _reportService.GetReports();
-            return Ok();
+            var reports = _reportService.GetReports(search);
+            return Ok(reports);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetReport(string id)
         {
-            _reportService.GetReport(id);
-            return Ok();
+            var report = _reportService.GetReport(id);
+
+            if (report is not null) {
+                return Ok(report);
+            }
+            return NotFound();
         }
     }
 }

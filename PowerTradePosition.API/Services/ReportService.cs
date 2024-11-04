@@ -1,6 +1,7 @@
 using System;
 using PowerTradePosition.API.Models.Dto;
 using PowerTradePosition.API.Data;
+using PowerTradePosition.API.Models;
 
 namespace PowerTradePosition.API.Services;
 
@@ -11,13 +12,17 @@ public class ReportService : IReportService
     {
         _reportRepository = reportRepository;
     }
-    public void GetReport(string id)
+    public ReportDetail? GetReport(string id)
     {
-        _reportRepository.Get(id);
+        return _reportRepository.Get(id);
     }
 
-    public void GetReports()
+    public List<ReportItem> GetReports(string searchQuery)
     {
-        _reportRepository.List();
+        if (!string.IsNullOrWhiteSpace(searchQuery))
+        {
+            return _reportRepository.List(searchQuery);
+        }
+        return _reportRepository.List();
     }
 }
